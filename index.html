@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chisom Ojeh — Full-Stack Developer</title>
+  <meta name="description" content="Full-stack developer based in Abuja. I build high-quality web applications with React, TypeScript, and Node.js." />
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><defs><linearGradient id='g' x1='0' y1='0' x2='1' y2='1'><stop offset='0' stop-color='%238B5CF6'/><stop offset='1' stop-color='%2345E0FF'/></linearGradient></defs><rect width='100' height='100' rx='20' fill='url(%23g)'/><text x='50' y='68' font-size='55' text-anchor='middle' fill='%23020408' font-family='Arial Black'>C</text></svg>" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="grain" aria-hidden="true"></div>
+  <canvas id="starfield" aria-hidden="true"></canvas>
+  <div class="nebula" aria-hidden="true"><i class="n1"></i><i class="n2"></i><i class="n3"></i></div>
+
+  <header class="nav">
+    <a class="logo" href="index.html">CHISOM<span>OJEH</span></a>
+    <nav class="nav-links">
+      <a href="works.html">Work</a>
+      <a href="#about">About</a>
+      <a href="#experience">Journey</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="nav-actions">
+      <button id="themeToggle" class="pill-btn" aria-label="Toggle theme">◐ Theme</button>
+      <a href="#contact" class="pill-btn solid">Let's Talk ↗</a>
+    </div>
+    <button class="menu-btn" id="menuBtn" aria-label="Menu">☰</button>
+  </header>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="works.html">Work</a>
+    <a href="#about">About</a>
+    <a href="#experience">Journey</a>
+    <a href="#contact">Contact</a>
+  </div>
+
+  <main id="top">
+    <!-- ============ HERO ============ -->
+    <section class="hero">
+      <div class="hero-text">
+        <p class="eyebrow"><span class="dot"></span> <span id="greeting">Hello</span> — based in Abuja, Nigeria</p>
+        <h1 class="mega">CHISOM<br /><em>OJEH</em></h1>
+        <p class="lede">Full-stack developer. I build high-quality web applications with <strong>React, TypeScript &amp; Node.js</strong> — focused on clean code, great UX, and shipping things that make an impact.</p>
+        <div class="cta-row">
+          <a href="works.html" class="btn primary">Explore My Works →</a>
+          <a href="mailto:adaobiojeh@gmail.com" class="btn ghost">adaobiojeh@gmail.com ✉</a>
+        </div>
+        <div class="hero-meta">
+          <div><b>10+</b><span>GitHub repos</span></div>
+          <div><b>3+</b><span>Yrs experience</span></div>
+          <div><b>∞</b><span>Curiosity</span></div>
+        </div>
+        <a class="scroll-cue" href="#work">SCROLL ↓</a>
+      </div>
+
+      <!-- Interactive "Orbit Console" — constellation canvas + tilting rings + live clock -->
+      <div class="hero-visual" id="heroVisual">
+        <canvas id="constellation" aria-hidden="true"></canvas>
+        <div class="orbit-stage" id="orbitStage">
+          <div class="ring r1"></div>
+          <div class="ring r2"><i class="planet p1"></i></div>
+          <div class="ring r3"><i class="planet p2"></i><i class="planet p3"></i></div>
+          <div class="core">
+            <span class="core-mono">CO</span>
+            <span class="core-sub" id="liveClock">00:00:00</span>
+            <span class="core-tag">ABUJA • <span id="localTime">WAT</span></span>
+          </div>
+          <svg class="orbit-text" viewBox="0 0 200 200" aria-hidden="true">
+            <defs><path id="circlePath" d="M100,100 m-84,0 a84,84 0 1,1 168,0 a84,84 0 1,1 -168,0" /></defs>
+            <text><textPath href="#circlePath"> OPEN FOR WORK •  REACT • TYPESCRIPT •  NODE • </textPath></text>
+          </svg>
+        </div>
+        <div class="chips">
+          <button class="chip" data-chip>⚛ React</button>
+          <button class="chip" data-chip>▲ TypeScript</button>
+          <button class="chip" data-chip>⬢ Node.js</button>
+          <button class="chip" data-chip>✦ Framer Motion</button>
+        </div>
+        <p class="hint">move your cursor — the constellation reacts ✦</p>
+      </div>
+    </section>
+
+    <!-- ============ MARQUEE ============ -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee-track">
+        <span>Clean Code ✦ Great UX ✦ React ✦ TypeScript ✦ Node.js ✦ Agile ✦ Teamwork ✦&nbsp;</span>
+        <span>Clean Code ✦ Great UX ✦ React ✦ TypeScript ✦ Node.js ✦ Agile ✦ Teamwork ✦&nbsp;</span>
+      </div>
+    </div>
+
+    <!-- ============ WORK (line by line) ============ -->
+    <section class="section" id="work">
+      <p class="kicker">01 · Selected Work</p>
+      <div class="section-head">
+        <h2>FEATURED<br />PROJECTS</h2>
+        <p>A selection of things I've designed &amp; shipped. The full archive lives on the <a href="works.html">works page →</a></p>
+      </div>
+      <div class="showcases">
+        <article class="showcase reveal">
+          <div class="shot art-2 live-shot">
+            <div class="shot-bar"><i></i><i></i><i></i><span class="shot-url">skyncare.vercel.app</span></div>
+            <iframe src="https://skyncare.vercel.app/" title="Skyncare — live preview" loading="lazy" scrolling="no" tabindex="-1" aria-hidden="true" referrerpolicy="no-referrer" sandbox="allow-scripts allow-same-origin"></iframe>
+            <a class="shot-link" href="https://skyncare.vercel.app/" target="_blank" rel="noreferrer" aria-label="Open Skyncare live site"><span class="shot-open">Open live site ↗</span></a>
+          </div>
+          <div class="show-body">
+            <div class="show-top">
+              <span class="show-num">01</span>
+              <div class="show-pills"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+            </div>
+            <h3><a href="https://skyncare.vercel.app/" target="_blank" rel="noreferrer">Skyncare</a></h3>
+            <ul class="show-points">
+              <li>Built a fully responsive skincare landing page that shines on every device.</li>
+              <li>Designed calming product showcase sections with clear calls to action.</li>
+              <li>Deployed on Vercel for fast loads and smooth navigation.</li>
+            </ul>
+            <div class="show-meta">
+              <div><span class="k">Client</span><span class="v">Freelance Client</span></div>
+              <div><span class="k">Period</span><span class="v">2025</span></div>
+              <div><span class="k">Role</span><span class="v">Frontend Developer</span></div>
+            </div>
+            <a class="show-live" href="https://skyncare.vercel.app/" target="_blank" rel="noreferrer">View Live Site ↗</a>
+          </div>
+        </article>
+
+        <article class="showcase flip reveal">
+          <div class="shot art-5 live-shot">
+            <div class="shot-bar"><i></i><i></i><i></i><span class="shot-url">jam-furniture · vercel</span></div>
+            <iframe src="https://chisomoj-jam-furniture-fi3ogfvmz-favourlanez.vercel.app/" title="JAM Furniture — live preview" loading="lazy" scrolling="no" tabindex="-1" aria-hidden="true" referrerpolicy="no-referrer" sandbox="allow-scripts allow-same-origin"></iframe>
+            <a class="shot-link" href="https://chisomoj-jam-furniture-fi3ogfvmz-favourlanez.vercel.app/" target="_blank" rel="noreferrer" aria-label="Open JAM Furniture live site"><span class="shot-open">Open live site ↗</span></a>
+          </div>
+          <div class="show-body">
+            <div class="show-top">
+              <span class="show-num">02</span>
+              <div class="show-pills"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+            </div>
+            <h3><a href="https://chisomoj-jam-furniture-fi3ogfvmz-favourlanez.vercel.app/" target="_blank" rel="noreferrer">JAM Furniture</a></h3>
+            <ul class="show-points">
+              <li>Built a warm, catalogue-style furniture website with rich product sections.</li>
+              <li>Created responsive layouts that keep the catalogue readable on mobile.</li>
+              <li>Added clear enquiry buttons so customers reach the business fast.</li>
+            </ul>
+            <div class="show-meta">
+              <div><span class="k">Client</span><span class="v">JAM Furniture</span></div>
+              <div><span class="k">Period</span><span class="v">2025</span></div>
+              <div><span class="k">Role</span><span class="v">Frontend Developer</span></div>
+            </div>
+            <a class="show-live" href="https://chisomoj-jam-furniture-fi3ogfvmz-favourlanez.vercel.app/" target="_blank" rel="noreferrer">View Live Site ↗</a>
+          </div>
+        </article>
+
+        <article class="showcase reveal">
+          <div class="shot art-3 live-shot">
+            <div class="shot-bar"><i></i><i></i><i></i><span class="shot-url">pyjamas · vercel</span></div>
+            <iframe src="https://pyjamas-ovth5pdcp-favourlanez.vercel.app/" title="Pyjamas — live preview" loading="lazy" scrolling="no" tabindex="-1" aria-hidden="true" referrerpolicy="no-referrer" sandbox="allow-scripts allow-same-origin"></iframe>
+            <a class="shot-link" href="https://pyjamas-ovth5pdcp-favourlanez.vercel.app/" target="_blank" rel="noreferrer" aria-label="Open Pyjamas live site"><span class="shot-open">Open live site ↗</span></a>
+          </div>
+          <div class="show-body">
+            <div class="show-top">
+              <span class="show-num">03</span>
+              <div class="show-pills"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+            </div>
+            <h3><a href="https://pyjamas-ovth5pdcp-favourlanez.vercel.app/" target="_blank" rel="noreferrer">Pyjamas Collection</a></h3>
+            <ul class="show-points">
+              <li>Designed a cosy, soft-toned storefront for a sleepwear brand.</li>
+              <li>Built responsive product grids with sharp, readable typography.</li>
+              <li>Deployed on Vercel for instant, reliable hosting.</li>
+            </ul>
+            <div class="show-meta">
+              <div><span class="k">Client</span><span class="v">Freelance Client</span></div>
+              <div><span class="k">Period</span><span class="v">2025</span></div>
+              <div><span class="k">Role</span><span class="v">Frontend Developer</span></div>
+            </div>
+            <a class="show-live" href="https://pyjamas-ovth5pdcp-favourlanez.vercel.app/" target="_blank" rel="noreferrer">View Live Site ↗</a>
+          </div>
+        </article>
+
+        <article class="showcase flip reveal">
+          <div class="shot art-6 live-shot">
+            <div class="shot-bar"><i></i><i></i><i></i><span class="shot-url">restaurant · vercel</span></div>
+            <iframe src="https://resturant-ck4lv31b3-favourlanez.vercel.app/" title="Restaurant — live preview" loading="lazy" scrolling="no" tabindex="-1" aria-hidden="true" referrerpolicy="no-referrer" sandbox="allow-scripts allow-same-origin"></iframe>
+            <a class="shot-link" href="https://resturant-ck4lv31b3-favourlanez.vercel.app/" target="_blank" rel="noreferrer" aria-label="Open Restaurant live site"><span class="shot-open">Open live site ↗</span></a>
+          </div>
+          <div class="show-body">
+            <div class="show-top">
+              <span class="show-num">04</span>
+              <div class="show-pills"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+            </div>
+            <h3><a href="https://resturant-ck4lv31b3-favourlanez.vercel.app/" target="_blank" rel="noreferrer">Restaurant Website</a></h3>
+            <ul class="show-points">
+              <li>Built an appetising restaurant site with menu and reservation sections.</li>
+              <li>Made the layout fully responsive, from phones to desktops.</li>
+              <li>Used rich imagery sections with strong calls to action.</li>
+            </ul>
+            <div class="show-meta">
+              <div><span class="k">Client</span><span class="v">Freelance Client</span></div>
+              <div><span class="k">Period</span><span class="v">2025</span></div>
+              <div><span class="k">Role</span><span class="v">Frontend Developer</span></div>
+            </div>
+            <a class="show-live" href="https://resturant-ck4lv31b3-favourlanez.vercel.app/" target="_blank" rel="noreferrer">View Live Site ↗</a>
+          </div>
+        </article>
+
+        <article class="showcase reveal">
+          <div class="shot art-1 live-shot">
+            <div class="shot-bar"><i></i><i></i><i></i><span class="shot-url">coffee · vercel</span></div>
+            <iframe src="https://coffee-cytjn6hhb-favourlanez.vercel.app/" title="Coffee — live preview" loading="lazy" scrolling="no" tabindex="-1" aria-hidden="true" referrerpolicy="no-referrer" sandbox="allow-scripts allow-same-origin"></iframe>
+            <a class="shot-link" href="https://coffee-cytjn6hhb-favourlanez.vercel.app/" target="_blank" rel="noreferrer" aria-label="Open Coffee live site"><span class="shot-open">Open live site ↗</span></a>
+          </div>
+          <div class="show-body">
+            <div class="show-top">
+              <span class="show-num">05</span>
+              <div class="show-pills"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+            </div>
+            <h3><a href="https://coffee-cytjn6hhb-favourlanez.vercel.app/" target="_blank" rel="noreferrer">Coffee Brand Site</a></h3>
+            <ul class="show-points">
+              <li>Crafted a rich coffee brand site with a bold, aromatic hero section.</li>
+              <li>Built menu and order sections that guide visitors to buy.</li>
+              <li>Shipped a fast, mobile-first experience on Vercel.</li>
+            </ul>
+            <div class="show-meta">
+              <div><span class="k">Client</span><span class="v">Freelance Client</span></div>
+              <div><span class="k">Period</span><span class="v">2025</span></div>
+              <div><span class="k">Role</span><span class="v">Frontend Developer</span></div>
+            </div>
+            <a class="show-live" href="https://coffee-cytjn6hhb-favourlanez.vercel.app/" target="_blank" rel="noreferrer">View Live Site ↗</a>
+          </div>
+        </article>
+      </div>
+      <div class="center"><a class="btn primary" href="works.html">View All Works →</a></div>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section class="section about" id="about">
+      <div class="about-grid">
+        <div>
+          <p class="kicker">02 · About</p>
+          <h2>ABOUT<br />ME</h2>
+          <p class="lede-sm">Web developer based in Abuja, with a background in Computer Science.</p>
+          <p>I build high-quality web applications with React, TypeScript, and Node.js. Skilled in teamwork, agile workflows, and delivering solutions that balance clean code with great UX.</p>
+          <ul class="ticks">
+            <li>Responsive, accessible interfaces</li>
+            <li>REST APIs &amp; Node backends</li>
+            <li>Agile delivery &amp; code review culture</li>
+          </ul>
+          <div class="skills">
+            <span>HTML</span><span>CSS</span><span>JavaScript</span><span>React</span><span>TypeScript</span><span>Node.js</span><span>Tailwind</span><span>Bootstrap</span><span>Git</span>
+          </div>
+        </div>
+        <aside class="about-card reveal">
+          <h3>Currently</h3>
+          <p><strong>Freelance Frontend Developer</strong><br />Building client websites — landing pages, storefronts &amp; brand sites.</p>
+          <hr />
+          <h3>Focus</h3>
+          <div class="bars">
+            <label>Frontend — React/TS <b>90%</b></label><div class="bar"><i style="--w:90%"></i></div>
+            <label>Backend — Node <b>78%</b></label><div class="bar"><i style="--w:78%"></i></div>
+            <label>UI / Motion <b>84%</b></label><div class="bar"><i style="--w:84%"></i></div>
+          </div>
+          <a class="btn primary full" href="Chisom-Ojeh-CV.pdf" download="Chisom-Ojeh-CV.pdf">Download CV ↓</a>
+        </aside>
+      </div>
+    </section>
+
+    <!-- ============ EXPERIENCE ============ -->
+    <section class="section" id="experience">
+      <p class="kicker">03 · Journey</p>
+      <div class="section-head">
+        <h2>THE<br />JOURNEY</h2>
+      </div>
+      <ol class="timeline projects">
+        <li class="reveal"><div><h3><a href="https://skyncare.vercel.app/" target="_blank" rel="noreferrer">Skyncare ↗</a></h3><p>Skincare landing page — calm product sections with clear calls to action.</p></div></li>
+        <li class="reveal"><div><h3><a href="https://chisomoj-jam-furniture-fi3ogfvmz-favourlanez.vercel.app/" target="_blank" rel="noreferrer">JAM Furniture ↗</a></h3><p>Furniture catalogue website — warm product displays with fast enquiries.</p></div></li>
+        <li class="reveal"><div><h3><a href="https://pyjamas-ovth5pdcp-favourlanez.vercel.app/" target="_blank" rel="noreferrer">Pyjamas Collection ↗</a></h3><p>Sleepwear storefront — soft-toned shopping experience.</p></div></li>
+        <li class="reveal"><div><h3><a href="https://resturant-ck4lv31b3-favourlanez.vercel.app/" target="_blank" rel="noreferrer">Restaurant Website ↗</a></h3><p>Restaurant site — menu and reservation sections that invite bookings.</p></div></li>
+        <li class="reveal"><div><h3><a href="https://coffee-cytjn6hhb-favourlanez.vercel.app/" target="_blank" rel="noreferrer">Coffee Brand Site ↗</a></h3><p>Coffee shop landing page — bold hero with menu and order sections.</p></div></li>
+        <li class="reveal"><div><h3><a href="https://skincare-website-f2t9w8u7a-favourlanez.vercel.app/" target="_blank" rel="noreferrer">Lumière Skin Boutique ↗</a></h3><p>Skincare boutique — collections, cart and promo offers.</p></div></li>
+        <li class="reveal"><div><h3><a href="https://dentalcare-umber.vercel.app/" target="_blank" rel="noreferrer">Lanez Dental Clinic ↗</a></h3><p>Dental clinic site — services plus live appointment booking.</p></div></li>
+        <li class="reveal"><div><h3><a href="https://luxewigs-livid.vercel.app/" target="_blank" rel="noreferrer">LuxeWigs Store ↗</a></h3><p>Luxury wig store — shop, cart and Paystack checkout.</p></div></li>
+        <li class="reveal"><div><h3><a href="https://spaceshop-one.vercel.app/" target="_blank" rel="noreferrer">SPACE Store ↗</a></h3><p>Apparel store — clothing, shapewear and checkout flow.</p></div></li>
+      </ol>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section class="section contact" id="contact">
+      <p class="kicker" style="justify-content:center">04 · Contact</p>
+      <h2>HAVE AN IDEA?<br /><em>LET'S BUILD IT.</em></h2>
+      <p>Committed to delivering seamless user interfaces — eager to contribute to innovative projects and collaborate effectively.</p>
+      <div class="cta-row center">
+        <a class="btn primary" href="mailto:adaobiojeh@gmail.com">adaobiojeh@gmail.com ↗</a>
+        <a class="btn ghost" href="Chisom-Ojeh-CV.pdf" target="_blank" rel="noreferrer">View CV 👁</a>
+        <a class="btn ghost" href="tel:+23408163118770">📞 +23408163118770</a>
+        <a class="btn ghost" href="https://github.com/chisomoj" target="_blank" rel="noreferrer">GitHub</a>
+        <a class="btn ghost" href="https://www.linkedin.com/in/favour-ojeh-492601371/" target="_blank" rel="noreferrer">LinkedIn</a>
+        <a class="btn ghost" href="https://www.instagram.com/codewithfavour/" target="_blank" rel="noreferrer">Instagram</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© <span id="year"></span> Chisom Ojeh — Abuja, Nigeria. · Designed by <a href="https://www.instagram.com/codewithfavour/" target="_blank" rel="noreferrer">Codewithfavour ↗</a> · Crafted in deep space with <span class="swatches"><i style="background:#020208"></i><i style="background:#8B5CF6"></i><i style="background:#45E0FF"></i><i style="background:#FF5CA8"></i><i style="background:#F5F3FF"></i></span></p>
+    <a href="#top">Back to top ↑</a>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

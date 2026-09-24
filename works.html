@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>All Works — Chisom Ojeh</title>
+  <meta name="description" content="The full project archive of Chisom Ojeh — React, TypeScript, Node.js and motion experiments." />
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><defs><linearGradient id='g' x1='0' y1='0' x2='1' y2='1'><stop offset='0' stop-color='%238B5CF6'/><stop offset='1' stop-color='%2345E0FF'/></linearGradient></defs><rect width='100' height='100' rx='20' fill='url(%23g)'/><text x='50' y='68' font-size='55' text-anchor='middle' fill='%23020408' font-family='Arial Black'>C</text></svg>" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="grain" aria-hidden="true"></div>
+  <canvas id="starfield" aria-hidden="true"></canvas>
+  <div class="nebula" aria-hidden="true"><i class="n1"></i><i class="n2"></i><i class="n3"></i></div>
+
+  <header class="nav">
+    <a class="logo" href="index.html">CHISOM<span>OJEH</span></a>
+    <nav class="nav-links">
+      <a href="works.html" class="active">Work</a>
+      <a href="index.html#about">About</a>
+      <a href="index.html#experience">Journey</a>
+      <a href="index.html#contact">Contact</a>
+    </nav>
+    <div class="nav-actions">
+      <button id="themeToggle" class="pill-btn" aria-label="Toggle theme">◐ Theme</button>
+      <a href="index.html#contact" class="pill-btn solid">Let's Talk ↗</a>
+    </div>
+    <button class="menu-btn" id="menuBtn" aria-label="Menu">☰</button>
+  </header>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="works.html">Work</a>
+    <a href="index.html#about">About</a>
+    <a href="index.html#experience">Journey</a>
+    <a href="index.html#contact">Contact</a>
+  </div>
+
+  <main id="top">
+    <div class="page-hero">
+      <p class="kicker">The Archive · <span class="work-count" id="workCount">9 projects</span></p>
+      <h1>ALL<br />WORKS</h1>
+      <p class="sub">Every shipped project, experiment and late-night build — filter by stack, or scroll the full timeline of work.</p>
+    </div>
+
+    <div class="filter-bar" id="filterBar">
+      <button class="active" data-filter="all">All</button>
+      <button data-filter="html">HTML</button>
+      <button data-filter="css">CSS</button>
+      <button data-filter="javascript">JavaScript</button>
+    </div>
+
+    <section class="section" style="padding-top:1.5rem">
+      <div class="showcases" id="allRows">
+        <article class="showcase reveal visible" id="skyncare" data-tags="html css javascript">
+          <div class="shot art-2 live-shot">
+            <div class="shot-bar"><i></i><i></i><i></i><span class="shot-url">skyncare.vercel.app</span></div>
+            <iframe src="https://skyncare.vercel.app/" title="Skyncare — live preview" loading="lazy" scrolling="no" tabindex="-1" aria-hidden="true" referrerpolicy="no-referrer" sandbox="allow-scripts allow-same-origin"></iframe>
+            <a class="shot-link" href="https://skyncare.vercel.app/" target="_blank" rel="noreferrer" aria-label="Open Skyncare live site"><span class="shot-open">Open live site ↗</span></a>
+          </div>
+          <div class="show-body">
+            <div class="show-top">
+              <span class="show-num">01</span>
+              <div class="show-pills"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+            </div>
+            <h3>Skyncare</h3>
+            <ul class="show-points">
+              <li>Built a fully responsive skincare landing page that shines on every device.</li>
+              <li>Designed calming product showcase sections with clear calls to action.</li>
+              <li>Deployed on Vercel for fast loads and smooth navigation.</li>
+            </ul>
+            <div class="show-meta">
+              <div><span class="k">Client</span><span class="v">Freelance Client</span></div>
+              <div><span class="k">Period</span><span class="v">2025</span></div>
+              <div><span class="k">Role</span><span class="v">Frontend Developer</span></div>
+            </div>
+            <a class="show-live" href="https://skyncare.vercel.app/" target="_blank" rel="noreferrer">View Live Site ↗</a>
+          </div>
+        </article>
+
+        <article class="showcase flip reveal visible" id="jam" data-tags="html css javascript">
+          <div class="shot art-5 live-shot">
+            <div class="shot-bar"><i></i><i></i><i></i><span class="shot-url">jam-furniture · vercel</span></div>
+            <iframe src="https://chisomoj-jam-furniture-fi3ogfvmz-favourlanez.vercel.app/" title="JAM Furniture — live preview" loading="lazy" scrolling="no" tabindex="-1" aria-hidden="true" referrerpolicy="no-referrer" sandbox="allow-scripts allow-same-origin"></iframe>
+            <a class="shot-link" href="https://chisomoj-jam-furniture-fi3ogfvmz-favourlanez.vercel.app/" target="_blank" rel="noreferrer" aria-label="Open JAM Furniture live site"><span class="shot-open">Open live site ↗</span></a>
+          </div>
+          <div class="show-body">
+            <div class="show-top">
+              <span class="show-num">02</span>
+              <div class="show-pills"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+            </div>
+            <h3>JAM Furniture</h3>
+            <ul class="show-points">
+              <li>Built a warm, catalogue-style furniture website with rich product sections.</li>
+              <li>Created responsive layouts that keep the catalogue readable on mobile.</li>
+              <li>Added clear enquiry buttons so customers reach the business fast.</li>
+            </ul>
+            <div class="show-meta">
+              <div><span class="k">Client</span><span class="v">JAM Furniture</span></div>
+              <div><span class="k">Period</span><span class="v">2025</span></div>
+              <div><span class="k">Role</span><span class="v">Frontend Developer</span></div>
+            </div>
+            <a class="show-live" href="https://chisomoj-jam-furniture-fi3ogfvmz-favourlanez.vercel.app/" target="_blank" rel="noreferrer">View Live Site ↗</a>
+          </div>
+        </article>
+
+        <article class="showcase reveal visible" id="pyjamas" data-tags="html css javascript">
+          <div class="shot art-3 live-shot">
+            <div class="shot-bar"><i></i><i></i><i></i><span class="shot-url">pyjamas · vercel</span></div>
+            <iframe src="https://pyjamas-ovth5pdcp-favourlanez.vercel.app/" title="Pyjamas — live preview" loading="lazy" scrolling="no" tabindex="-1" aria-hidden="true" referrerpolicy="no-referrer" sandbox="allow-scripts allow-same-origin"></iframe>
+            <a class="shot-link" href="https://pyjamas-ovth5pdcp-favourlanez.vercel.app/" target="_blank" rel="noreferrer" aria-label="Open Pyjamas live site"><span class="shot-open">Open live site ↗</span></a>
+          </div>
+          <div class="show-body">
+            <div class="show-top">
+              <span class="show-num">03</span>
+              <div class="show-pills"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+            </div>
+            <h3>Pyjamas Collection</h3>
+            <ul class="show-points">
+              <li>Designed a cosy, soft-toned storefront for a sleepwear brand.</li>
+              <li>Built responsive product grids with sharp, readable typography.</li>
+              <li>Deployed on Vercel for instant, reliable hosting.</li>
+            </ul>
+            <div class="show-meta">
+              <div><span class="k">Client</span><span class="v">Freelance Client</span></div>
+              <div><span class="k">Period</span><span class="v">2025</span></div>
+              <div><span class="k">Role</span><span class="v">Frontend Developer</span></div>
+            </div>
+            <a class="show-live" href="https://pyjamas-ovth5pdcp-favourlanez.vercel.app/" target="_blank" rel="noreferrer">View Live Site ↗</a>
+          </div>
+        </article>
+
+        <article class="showcase flip reveal visible" id="restaurant" data-tags="html css javascript">
+          <div class="shot art-6 live-shot">
+            <div class="shot-bar"><i></i><i></i><i></i><span class="shot-url">restaurant · vercel</span></div>
+            <iframe src="https://resturant-ck4lv31b3-favourlanez.vercel.app/" title="Restaurant — live preview" loading="lazy" scrolling="no" tabindex="-1" aria-hidden="true" referrerpolicy="no-referrer" sandbox="allow-scripts allow-same-origin"></iframe>
+            <a class="shot-link" href="https://resturant-ck4lv31b3-favourlanez.vercel.app/" target="_blank" rel="noreferrer" aria-label="Open Restaurant live site"><span class="shot-open">Open live site ↗</span></a>
+          </div>
+          <div class="show-body">
+            <div class="show-top">
+              <span class="show-num">04</span>
+              <div class="show-pills"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+            </div>
+            <h3>Restaurant Website</h3>
+            <ul class="show-points">
+              <li>Built an appetising restaurant site with menu and reservation sections.</li>
+              <li>Made the layout fully responsive, from phones to desktops.</li>
+              <li>Used rich imagery sections with strong calls to action.</li>
+            </ul>
+            <div class="show-meta">
+              <div><span class="k">Client</span><span class="v">Freelance Client</span></div>
+              <div><span class="k">Period</span><span class="v">2025</span></div>
+              <div><span class="k">Role</span><span class="v">Frontend Developer</span></div>
+            </div>
+            <a class="show-live" href="https://resturant-ck4lv31b3-favourlanez.vercel.app/" target="_blank" rel="noreferrer">View Live Site ↗</a>
+          </div>
+        </article>
+
+        <article class="showcase reveal visible" id="coffee" data-tags="html css javascript">
+          <div class="shot art-1 live-shot">
+            <div class="shot-bar"><i></i><i></i><i></i><span class="shot-url">coffee · vercel</span></div>
+            <iframe src="https://coffee-cytjn6hhb-favourlanez.vercel.app/" title="Coffee — live preview" loading="lazy" scrolling="no" tabindex="-1" aria-hidden="true" referrerpolicy="no-referrer" sandbox="allow-scripts allow-same-origin"></iframe>
+            <a class="shot-link" href="https://coffee-cytjn6hhb-favourlanez.vercel.app/" target="_blank" rel="noreferrer" aria-label="Open Coffee live site"><span class="shot-open">Open live site ↗</span></a>
+          </div>
+          <div class="show-body">
+            <div class="show-top">
+              <span class="show-num">05</span>
+              <div class="show-pills"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+            </div>
+            <h3>Coffee Brand Site</h3>
+            <ul class="show-points">
+              <li>Crafted a rich coffee brand site with a bold, aromatic hero section.</li>
+              <li>Built menu and order sections that guide visitors to buy.</li>
+              <li>Shipped a fast, mobile-first experience on Vercel.</li>
+            </ul>
+            <div class="show-meta">
+              <div><span class="k">Client</span><span class="v">Freelance Client</span></div>
+              <div><span class="k">Period</span><span class="v">2025</span></div>
+              <div><span class="k">Role</span><span class="v">Frontend Developer</span></div>
+            </div>
+            <a class="show-live" href="https://coffee-cytjn6hhb-favourlanez.vercel.app/" target="_blank" rel="noreferrer">View Live Site ↗</a>
+          </div>
+        </article>
+
+        <article class="showcase flip reveal visible" id="lumiere" data-tags="html css javascript">
+          <div class="shot art-7 live-shot">
+            <div class="shot-bar"><i></i><i></i><i></i><span class="shot-url">lumiere-skin · vercel</span></div>
+            <iframe src="https://skincare-website-f2t9w8u7a-favourlanez.vercel.app/" title="Lumiere Skin — live preview" loading="lazy" scrolling="no" tabindex="-1" aria-hidden="true" referrerpolicy="no-referrer" sandbox="allow-scripts allow-same-origin"></iframe>
+            <a class="shot-link" href="https://skincare-website-f2t9w8u7a-favourlanez.vercel.app/" target="_blank" rel="noreferrer" aria-label="Open Lumiere Skin live site"><span class="shot-open">Open live site ↗</span></a>
+          </div>
+          <div class="show-body">
+            <div class="show-top">
+              <span class="show-num">06</span>
+              <div class="show-pills"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+            </div>
+            <h3>Lumière Skin Boutique</h3>
+            <ul class="show-points">
+              <li>Built a full boutique storefront with collections, naira pricing and cart flow.</li>
+              <li>Added promo banners, discount codes and a free-shipping threshold to lift sales.</li>
+              <li>Included reviews, routine guides and newsletter signup for repeat traffic.</li>
+            </ul>
+            <div class="show-meta">
+              <div><span class="k">Client</span><span class="v">Lumière Skin</span></div>
+              <div><span class="k">Period</span><span class="v">2025</span></div>
+              <div><span class="k">Role</span><span class="v">Frontend Developer</span></div>
+            </div>
+            <a class="show-live" href="https://skincare-website-f2t9w8u7a-favourlanez.vercel.app/" target="_blank" rel="noreferrer">View Live Site ↗</a>
+          </div>
+        </article>
+
+        <article class="showcase reveal visible" id="dental" data-tags="html css javascript">
+          <div class="shot art-8 live-shot">
+            <div class="shot-bar"><i></i><i></i><i></i><span class="shot-url">lanez-dental · vercel</span></div>
+            <iframe src="https://dentalcare-umber.vercel.app/" title="Lanez Dental — live preview" loading="lazy" scrolling="no" tabindex="-1" aria-hidden="true" referrerpolicy="no-referrer" sandbox="allow-scripts allow-same-origin"></iframe>
+            <a class="shot-link" href="https://dentalcare-umber.vercel.app/" target="_blank" rel="noreferrer" aria-label="Open Lanez Dental live site"><span class="shot-open">Open live site ↗</span></a>
+          </div>
+          <div class="show-body">
+            <div class="show-top">
+              <span class="show-num">07</span>
+              <div class="show-pills"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+            </div>
+            <h3>Lanez Dental Clinic</h3>
+            <ul class="show-points">
+              <li>Built a multi-section clinic site with services, gallery and doctor profiles.</li>
+              <li>Added a live booking system with calendar, instant confirmation and lookup.</li>
+              <li>Included honest pricing, patient reviews and Instagram integration.</li>
+            </ul>
+            <div class="show-meta">
+              <div><span class="k">Client</span><span class="v">Lanez Dental Clinic</span></div>
+              <div><span class="k">Period</span><span class="v">2025</span></div>
+              <div><span class="k">Role</span><span class="v">Frontend Developer</span></div>
+            </div>
+            <a class="show-live" href="https://dentalcare-umber.vercel.app/" target="_blank" rel="noreferrer">View Live Site ↗</a>
+          </div>
+        </article>
+
+        <article class="showcase flip reveal visible" id="luxewigs" data-tags="html css javascript">
+          <div class="shot art-2 live-shot">
+            <div class="shot-bar"><i></i><i></i><i></i><span class="shot-url">luxewigs · vercel</span></div>
+            <iframe src="https://luxewigs-livid.vercel.app/" title="LuxeWigs — live preview" loading="lazy" scrolling="no" tabindex="-1" aria-hidden="true" referrerpolicy="no-referrer" sandbox="allow-scripts allow-same-origin"></iframe>
+            <a class="shot-link" href="https://luxewigs-livid.vercel.app/" target="_blank" rel="noreferrer" aria-label="Open LuxeWigs live site"><span class="shot-open">Open live site ↗</span></a>
+          </div>
+          <div class="show-body">
+            <div class="show-top">
+              <span class="show-num">08</span>
+              <div class="show-pills"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+            </div>
+            <h3>LuxeWigs Store</h3>
+            <ul class="show-points">
+              <li>Built a luxury wig storefront with shop, best sellers and flash-sale sections.</li>
+              <li>Added full cart and checkout with Lagos delivery fees and Paystack payments.</li>
+              <li>Included WhatsApp ordering, Instagram integration and order tracking.</li>
+            </ul>
+            <div class="show-meta">
+              <div><span class="k">Client</span><span class="v">LuxeWigs</span></div>
+              <div><span class="k">Period</span><span class="v">2026</span></div>
+              <div><span class="k">Role</span><span class="v">Frontend Developer</span></div>
+            </div>
+            <a class="show-live" href="https://luxewigs-livid.vercel.app/" target="_blank" rel="noreferrer">View Live Site ↗</a>
+          </div>
+        </article>
+
+        <article class="showcase reveal visible" id="spaceshop" data-tags="html css javascript">
+          <div class="shot art-5 live-shot">
+            <div class="shot-bar"><i></i><i></i><i></i><span class="shot-url">spaceshop · vercel</span></div>
+            <iframe src="https://spaceshop-one.vercel.app/" title="SPACE — live preview" loading="lazy" scrolling="no" tabindex="-1" aria-hidden="true" referrerpolicy="no-referrer" sandbox="allow-scripts allow-same-origin"></iframe>
+            <a class="shot-link" href="https://spaceshop-one.vercel.app/" target="_blank" rel="noreferrer" aria-label="Open SPACE live site"><span class="shot-open">Open live site ↗</span></a>
+          </div>
+          <div class="show-body">
+            <div class="show-top">
+              <span class="show-num">09</span>
+              <div class="show-pills"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+            </div>
+            <h3>SPACE Store</h3>
+            <ul class="show-points">
+              <li>Built a full apparel store with clothing, shapewear, mens and sale ranges.</li>
+              <li>Added size-select product pages with cart, bag and checkout flow.</li>
+              <li>Included free-shipping thresholds, 60-day returns and XXS–4X sizing.</li>
+            </ul>
+            <div class="show-meta">
+              <div><span class="k">Client</span><span class="v">SPACE</span></div>
+              <div><span class="k">Period</span><span class="v">2026</span></div>
+              <div><span class="k">Role</span><span class="v">Frontend Developer</span></div>
+            </div>
+            <a class="show-live" href="https://spaceshop-one.vercel.app/" target="_blank" rel="noreferrer">View Live Site ↗</a>
+          </div>
+        </article>
+      </div>
+      <div class="center">
+        <a class="btn ghost" href="index.html">← Back Home</a>
+        <a class="btn primary" href="index.html#contact" style="margin-left:.6rem">Start a Project ↗</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© <span id="year"></span> Chisom Ojeh — Abuja, Nigeria. · Designed by <a href="https://www.instagram.com/codewithfavour/" target="_blank" rel="noreferrer">Codewithfavour ↗</a> · Crafted in deep space with <span class="swatches"><i style="background:#020208"></i><i style="background:#8B5CF6"></i><i style="background:#45E0FF"></i><i style="background:#FF5CA8"></i><i style="background:#F5F3FF"></i></span></p>
+    <a href="#top">Back to top ↑</a>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
