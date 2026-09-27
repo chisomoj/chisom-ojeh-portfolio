@@ -90,6 +90,7 @@ a{color:inherit}
   filter:drop-shadow(0 0 26px rgba(139,92,246,.45))}
 .lede{font-size:clamp(1rem,1.6vw,1.2rem);line-height:1.7;color:var(--muted);max-width:34rem}
 .lede strong{color:var(--ink)}
+.stack-line{margin-top:1rem;font-size:.82rem;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--accent2);text-shadow:0 0 16px color-mix(in srgb, var(--accent2) 40%, transparent)}
 .cta-row{display:flex;gap:.8rem;margin-top:1.6rem;flex-wrap:wrap}
 .cta-row.center{justify-content:center}
 .btn{display:inline-block;padding:.95rem 1.6rem;border-radius:999px;font-weight:800;text-decoration:none;border:1px solid var(--line);transition:.25s;position:relative;overflow:hidden}
