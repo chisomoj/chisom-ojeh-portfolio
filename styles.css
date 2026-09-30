@@ -205,6 +205,8 @@ html[data-theme="light"] .core-sub{color:#bdf1ff}
 .show-points{list-style:none;display:grid;gap:.7rem;color:var(--muted);font-size:.94rem;line-height:1.6}
 .show-points li{padding-left:1.3rem;position:relative}
 .show-points li::before{content:"•";position:absolute;left:0;color:var(--accent3);font-weight:900;font-size:1.1rem;line-height:1.4}
+.built{color:var(--muted);font-size:.94rem;line-height:1.65;margin:0 0 .9rem}
+.did-head{font-weight:800;font-size:.8rem;letter-spacing:.1em;text-transform:uppercase;color:var(--ink);margin:0 0 .55rem}
 .show-meta{margin-top:1.4rem;padding-top:1.25rem;border-top:1px solid var(--line);display:grid;gap:.5rem}
 .show-meta div{display:grid;grid-template-columns:110px 1fr;gap:.6rem;font-size:.92rem}
 .show-meta .k{color:var(--muted)}
